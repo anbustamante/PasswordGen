@@ -54,3 +54,14 @@ button{
     line-height: 24px;
     color: white
 }
+.lineaSeparadora{
+    width: 446px;
+    height: 1px;
+    background-color: #2F3E53;
+}
+.contenedorInferior{
+    width: 633px;
+}
+.contraseña{
+    width: 211px;
+}
