@@ -59,12 +59,13 @@ button{
     font-size: 16px;
     line-height: 24px;
     color: white;
-    transition-duration: 0.4s ;
+    transition-duration: 0.4s ; /*cuanto dura la animacion*/
 }
-button:hover{
+button:hover{ /*pseudoclase hover, defino que pasa cuando tengo el mouse encima de la etiqueta button */
     color: #10B981;
     background: rgb(243, 243, 243);
 }
+
 .lineaSeparadora{
     width: 446px;
     height: 1px;
@@ -85,4 +86,13 @@ button:hover{
     height: 39px;
     background-color: #273549;
     border-radius: 6px;
+    color: #55F991;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 32px;
 }
