@@ -19,3 +19,24 @@ body{
     height: 550px;
 
 }
+h1{
+    color: white;
+    width: 500px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+}
+.textoVerde{
+    color: #4ADF86;
+}
+h2{
+    color: #D5D4D8;
+    width: 500px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
