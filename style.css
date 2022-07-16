@@ -55,10 +55,15 @@ button{
     border-radius: 6px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 550;
     font-size: 16px;
     line-height: 24px;
-    color: white
+    color: white;
+    transition-duration: 0.4s ;
+}
+button:hover{
+    color: #10B981;
+    background: rgb(243, 243, 243);
 }
 .lineaSeparadora{
     width: 446px;
