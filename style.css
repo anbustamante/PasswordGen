@@ -13,11 +13,15 @@ body{
     height: 100vh;
 }
 .contenedor{
-    margin-top: 15px;
     background-color: #1F2937;
     min-width: 550px;
     height: 550px;
 
+}
+.contenedorSuperior{
+    margin-top: 115px;
+    margin-left: 52px;
+    margin-bottom: 35px;
 }
 h1{
     color: white;
@@ -27,6 +31,7 @@ h1{
     font-weight: 800;
     font-size: 40px;
     line-height: 40px;
+    margin-bottom: 10px;
 }
 .textoVerde{
     color: #4ADF86;
@@ -39,6 +44,7 @@ h2{
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
+    margin-bottom: 51px;
 }
 button{
     border: none;
@@ -58,10 +64,14 @@ button{
     width: 446px;
     height: 1px;
     background-color: #2F3E53;
+    margin-left: 51px;
 }
 .contenedorInferior{
     width: 100%;
     height: 40px;
+    display: flex;
+    justify-content: space-around;
+
 }
 .contraseña{
     width: 211px;
