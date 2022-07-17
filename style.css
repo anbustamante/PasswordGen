@@ -96,3 +96,46 @@ button:hover{ /*pseudoclase hover, defino que pasa cuando tengo el mouse encima 
     font-size: 16px;
     line-height: 32px;
 }
+.popup{
+    background-color: #273549;
+    width: 100px;
+    padding: 5px;
+    border-radius: 6px;
+    color:rgb(243, 243, 243);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 550;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%,-20px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup.active{
+    animation: popup ease-in-out 1s forwards;
+}
+
+@keyframes popup{
+    0%{
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(-50%,-20px);
+    }
+    40%{
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%,0px);
+    }
+    80%{
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%,0px);
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(-50%,-20px);
+    }
+}

@@ -33,6 +33,9 @@ function copy(selector){
     }
     
     const textarea = document.createElement('textarea');
+    const popup = document.querySelector(".popup")
+    console.log(popup);
+    popup.classList.add('active')
     textarea.setAttribute('readonly','');
     textarea.style.position = 'absolute';
     textarea.value = passwdEl.textContent
@@ -40,4 +43,8 @@ function copy(selector){
     textarea.select();
     navigator.clipboard.writeText(textarea.value);
     document.body.removeChild(textarea)
+    
+    popup.addEventListener('animationend',()=>{
+        popup.classList.remove('active')
+    })
 }
