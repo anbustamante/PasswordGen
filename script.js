@@ -5,8 +5,8 @@ const characters =["A","B","C","D","E","F","G","H","I","J","K","L",
 "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=",
 "{","[","}","]",",","|",":",";","<",">",".","?","/"];
 
-let passwordEl = document.getElementById("passwd1")
-let passwordE2 = document.getElementById("passwd2")
+let passwordEl = document.getElementById("passwd1-el")
+let passwordE2 = document.getElementById("passwd2-el")
 
 function randomCar(){
     let indiceRandom = 0;
@@ -23,4 +23,21 @@ function generarContraseña(){
 function generarContraseñas(){
     passwordEl.textContent = generarContraseña()
     passwordE2.textContent = generarContraseña()
+}
+function copy(selector){
+
+    if(selector === 1){
+        var passwdEl = document.getElementById("passwd1-el")
+    }else{
+        var passwdEl = document.getElementById("passwd2-el")
+    }
+    
+    const textarea = document.createElement('textarea');
+    textarea.setAttribute('readonly','');
+    textarea.style.position = 'absolute';
+    textarea.value = passwdEl.textContent
+    document.body.appendChild(textarea);
+    textarea.select();
+    navigator.clipboard.writeText(textarea.value);
+    document.body.removeChild(textarea)
 }
