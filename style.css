@@ -91,8 +91,8 @@ button:hover{ /*pseudoclase hover, defino que pasa cuando tengo el mouse encima 
     justify-content: center;
     align-items: center;
     font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
 }

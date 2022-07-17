@@ -4,3 +4,17 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L",
 "u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8",
 "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=",
 "{","[","}","]",",","|",":",";","<",">",".","?","/"];
+
+function randomCar(){
+    let indiceRandom = 0;
+    indiceRandom = Math.floor(Math.random()*characters.length)
+    return characters[indiceRandom]
+}
+
+function generarContraseña(){
+    let contraseña = "";
+    for(let i=0;i<16;i++){
+        contraseña += randomCar();
+    }
+    return contraseña;
+}
